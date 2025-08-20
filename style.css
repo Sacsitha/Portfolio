@@ -1,0 +1,14 @@
+      #carouselExampleSlidesOnly {
+        height: 800px;
+        width: 100vw;
+        margin: 0;
+      }
+      #carouselExampleSlidesOnly .carousel-inner,
+      #carouselExampleSlidesOnly .carousel-item {
+        height: 100%;
+      }
+      #carouselExampleSlidesOnly img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
