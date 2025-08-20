@@ -1,3 +1,6 @@
+      /* *{
+        font-family: 'Times New Roman', Times, serif;
+      } */
       #carouselExampleSlidesOnly {
         height: 800px;
         width: 100vw;
@@ -11,4 +14,24 @@
         object-fit: cover;
         height: 100%;
         width: 100%;
+      }
+      
+      .title{
+        /* text-shadow: 2px 2px 8px #000; */
+        /* color: rgb(120, 0, 76); */
+        color: purple;
+        font-weight: bold;
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 10px;
+      }
+      .content{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.4rem;
+        line-height: 1.6;
+        color: rgb(120, 0, 76);
+        
+      }
+      .bg-violet{
+        background-color: rgb(120, 0, 76) !important;
       }
