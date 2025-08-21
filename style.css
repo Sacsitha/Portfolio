@@ -1,3 +1,4 @@
+
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
@@ -31,7 +32,6 @@
 
 .sub-title {
   color: rgb(255, 255, 255);
-  /* font-weight: bold; */
   font-size: 2.0rem;
   text-align: center;
   padding: 10px;
@@ -39,7 +39,6 @@
 
 .content {
   font-family: Arial, Helvetica, sans-serif;
-  /* font-family: 'Times New Roman', Times, serif; */
   font-size: 1.4rem;
   line-height: 1.6;
   color: rgb(255, 255, 255);
@@ -58,8 +57,6 @@
 
 .text-violet {
   color: rgb(238, 0, 255);
-
-  /* color: #B413EC; */
 }
 
 .bg-dark {
@@ -74,4 +71,7 @@ footer img {
 footer a {
   color: white;
   text-decoration: none;
+}
+.card.bg-dark {
+  border: 1px solid #fff;
 }
