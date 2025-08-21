@@ -1,0 +1,77 @@
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.btn-close {
+  filter: brightness(0) invert(1);
+}
+#carouselExampleSlidesOnly {
+  height: 800px;
+  width: 100vw;
+  margin: 0;
+}
+
+#carouselExampleSlidesOnly .carousel-inner,
+#carouselExampleSlidesOnly .carousel-item {
+  height: 100%;
+}
+
+#carouselExampleSlidesOnly img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.title {
+  color: #B413EC;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 10px;
+}
+
+.sub-title {
+  color: rgb(255, 255, 255);
+  font-size: 2.0rem;
+  text-align: center;
+  padding: 10px;
+}
+
+.content {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: rgb(255, 255, 255);
+}
+
+.point {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgb(255, 255, 255);
+}
+
+.bg-violet {
+  background-color: #C71585;
+}
+
+.text-violet {
+  color: rgb(238, 0, 255);
+}
+
+.bg-dark {
+  background-color: #000000 !important;
+}
+
+footer img {
+  filter: brightness(0) invert(1);
+  width: 24px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+.card.bg-dark {
+  border: 1px solid #fff;
+}
