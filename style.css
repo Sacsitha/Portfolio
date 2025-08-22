@@ -97,3 +97,11 @@ footer a {
   background-color: rgba(0, 0, 0, 0.547);
   border-radius: 27px;
 }
+.footer-fullwidth {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  right: 0;
+  left: 0;
+  position: relative;
+  box-sizing: border-box;
+}
