@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Sacsitha</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="text-white d-flex flex-column min-vh-100 contact-page">
+    <!-- Navigation Bar -->
+    <nav class="navbar fixed-top bg-black">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <h3 class="text-white fw-bold h3" style="text-shadow: 2px 2px 8px #000">Sacsitha Moganarasa</h3>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h3 class="text-white fw-bold h3" style="text-shadow: 2px 2px 8px #000">Sacsitha Moganarasa</h3>
+            <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <p class="text-white fs-4" style="text-shadow: 1px 1px 6px #000">
+                  <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+                </p>
+              </li>
+              <li class="nav-item">
+                <p class="text-white fs-4" style="text-shadow: 1px 1px 6px #000">
+                  <a class="nav-link text-white" href="./blog.html">Blog</a>
+                </p>
+              </li>
+              <li class="nav-item">
+                <p class="text-white fs-4" style="text-shadow: 1px 1px 6px #000">
+                  <a class="nav-link text-white" href="./contact.html">Contact Me</a>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Main Content -->
+    <main class="container m-5 p-5">
+         <section class="container ">
+          <!-- <div class="row">
+                <div class="col-12 m-5">
+                 <h1 class="title">Contact Me</h1>
+                </div>
+          </div> -->
+      <div class="row">
+        <div class="col-lg-6 col-md-8 col-sm-12 mx-auto text-center p-4 bg-dark-opacity">
+                 <h1 class="title">Contact Me</h1>
+         <form action="https://formspree.io/f/mayvlrpl" method="POST" class="text-start">
+                      <div class="mb-3">
+                         <label for="name" class="form-label f-1">Name</label>
+                         <input type="text" class="form-control" id="name" name="name" required>
+                      </div>
+                      <div class="mb-3">
+                         <label for="email" class="form-label">Email address</label>
+                         <input type="email" class="form-control" id="email" name="email" required>
+                      </div>
+                       <div class="mb-3">
+                         <label for="subject" class="form-label">Subject</label>
+                         <input type="text" class="form-control" id="subject" name="subject" required>
+                      </div>
+                      <div class="mb-3">
+                         <label for="message" class="form-label">Message</label>
+                         <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                      </div>
+                      <div class="text-center">
+                        <button type="submit" class="btn btn-violet bg-violet violet-border" data-bs-toggle="modal" data-bs-target="#messageModal" onclick="greeting()">Send</button>
+                      </div>
+                    </form>
+                </div>
+          </div>
+         </section>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-dark text-white mt-5 p-5 shadow-lg">
+      <div class="modal-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-11">
+                    <h5 class="modal-title" id="messageModalLabel"></h5>
+                </div>
+                <div class="col-1">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-body pt-5">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-12">
+                    <p id="replyMessage"></p>
+                </div>
+            </div>
+        </div>
+      </div>
+           <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ok</button>
+      </div>
+    </div>
+  </div>
+</div>
+    </main>
+     <!-- Footer -->
+     <footer class="bg-dark text-white mt-5  mt-auto w-100 ">
+    <hr class="white-divider mb-5 my-0" />
+   <div class="container text-right py-4">
+        <p class="text-secondary mb-0">Follow me on : <a href="https://github.com/Sacsitha" class="text-white"><img src="./assets/icons/github.svg" alt="GitHub" ></a> 
+           <a href="https://www.linkedin.com/in/sacsitha-moganarasa-5b47312b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-white"><img src="./assets/icons/linkedin.svg" alt="linkedin"></a>
+           <a href="https://sacsitha.medium.com/"><img src="./assets/icons/medium.svg" alt="Medium"></a>
+        </p>
+        <p><a href="mailto:sacsitha@gmail.com">sacsitha@gmail.com</a></p>
+        <p class="text-white mb-0 text-center">© 2025 Sacsitha Moganarasa. All rights reserved.</p>
+     </footer>
+     <script src="script.js"></script>
+  </body>
+</html>
